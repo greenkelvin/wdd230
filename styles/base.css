@@ -10,7 +10,7 @@ header div {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #3498db;
+    background-color: #00008B;
   }
   
 img {
@@ -70,7 +70,7 @@ main h2 {
 }
 
 .card h3 {
-    background-color: #3498db;
+    background-color: #00008B;
     color: #fff;
     padding: 10px;
     border-radius: 4px;
@@ -83,6 +83,6 @@ main h2 {
 }
 
 footer {
-    background-color: #3498db;
+    background-color: #00008B;
     color: #fff;
 }
