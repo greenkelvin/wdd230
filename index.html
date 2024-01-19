@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD230 - Web Frontend Developmet, Kelvin Green, course assignment portal">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap" rel="stylesheet">
     <title>Kelvin Green - WDD230 - Web Frontend Development</title>
 </head>
 <body>
@@ -18,16 +19,18 @@
         <h1>Kelvin Green</h1>
       </div>
       <nav>
-        <li>Home <a href="#"></a></li>
-        <li>Site Plan <a href="lesson03/chamber-site-plan.html"></a></li>
-        <li>Chamber <a href="chamber/"></a></li>
-        <li>BYU-Idaho <a href="https://www.byui.edu"></a></li>
-        <li>Scripture <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=eng#p12"></a></li>
+        <ul>
+            <li><a href="#"></a>Home</li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=eng#p12">Scripture</a></li>
+        </ul>
       </nav>
     </header>
       <main>
         <h2>WDD 230: Web Frontend Development</h2>
-        <section class="card">
+        <section class="card" id="activitiesCard">
             <h3>Learning Activities</h3>
             <ul>
                 <li>01: <a href="https://www.example.com">Title</a></li>
@@ -49,9 +52,11 @@
                 <li>Visits</li>
             </ul>
         </section>
+      </main>
       <footer>
-        <p>© 2023 .:|:. Kelvin Green .:|:. Idaho</p>
-        <p>lastModified</p>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
       </footer>
+      <script src="scripts/getdates.js" defer></script>
 </body>
 </html>
