@@ -1,5 +1,5 @@
 body {
-    max-width: 600px;
+    max-width: 760px;
     margin: 0 auto;
     text-align: center;
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -28,19 +28,18 @@ nav {
     background-color: #333;
     color: #fff;
     padding: 10px;
-    text-align: center;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+	list-style-type: none;
 }
-
 nav a {
-    color: #fff;
-    text-decoration: none; 
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
 }
 
 li {
