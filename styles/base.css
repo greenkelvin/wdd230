@@ -34,13 +34,21 @@ nav {
 nav ul {
 	list-style-type: none;
 }
-/* nav a {
+nav a {
 	display: block;
 	color: #fff;
 	text-align: center;
 	padding: 1rem;
 	text-decoration: none;
-} */
+}
+
+nav a:visited{
+	display: block;
+	color: #ccc;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
 
 li {
     list-style: none;
