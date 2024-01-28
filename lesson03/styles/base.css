@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #CDCDCD;
+  font-size: 16px;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+header,nav,main,footer {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+h1,h2,h3,h4,p {
+  display: flex;
+  align-items: center;
+	justify-content: center;
+  padding: 5px;
+  margin-top: 30px;
+}
+
+P {
+    font-family: Helvetica;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+
+header, main, footer {
+  display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+header, footer {
+  background-color: #011638;
+  border: 1px solid black;
+  color: #B3B3B3;
+}
+
+li {
+  text-decoration: none;
+  padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  font-family: Helvetica;
+}
+
+th {
+  background-color: #364156;
+  color: white;
+}
+
+tr {
+  border: 1px solid black;
+}
+
+.primary-color {
+  background-color: #CDCDCD;
+}
+
+.secondary-color {
+  background-color: #364156;
+  color: #CDCDCD;
+}
+
+.accent-one {
+  background-color: #011638;
+  color: #CDCDCD;
+}
+
+.accent-two {
+  background-color: #DFF8EB;
+}
+
+.accent-three {
+  background-color: #214E34;
+  color: #CDCDCD;
+}
+
+.colored-paragraph {
+  background-color: #DFF8EB;
+}
+
+img {
+  padding: 10px;
+}
+
+/* https://coolors.co/011638-364156-cdcdcd-dff8eb-214e34 */
