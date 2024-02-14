@@ -1,0 +1,20 @@
+/* Small (SM) Screens */
+@media (min-width: 576px) and (max-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-rows: auto auto; /* Two rows with auto height */
+        grid-template-columns: 1fr; /* One column */
+        gap: 10px; /* Gap between grid items */
+      }
+    
+    .top-row {
+        display: flex; /* Make the top and bottom rows flex containers */
+        grid-template-columns: 1fr 1fr; /* Two columns side by side */
+        gap: 10px;
+      }
+    
+    .bottom-row {
+        display: flex; /* Make the bottom row a flex container */
+        gap: 10px;
+    }
+}
