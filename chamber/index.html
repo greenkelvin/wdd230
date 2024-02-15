@@ -22,14 +22,19 @@
 </head>
 <body>
     <header>
+      <button id="menu"></button>
       <nav class="navbar">
         <h2>Ithaca Chamber of Commerce</h2>
-        <div class="navbar-toggle">&#9776;</div>
         <ul class="navbar-items">
             <li><a href="#">Home</a></li>
             <li><a href="#">Join Us</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
+            <li><label class="switch" id="slider">
+              <input type="checkbox" id="myCheckbox">
+              <span class="slider round"></span>
+            </label>
+            </li>
         </ul>
       </nav>
     </header>
@@ -58,7 +63,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Adipiscing tristique risus nec feugiat in fermentum. deez </p>
           </section>
-          <section class="card center-card" id="card2">
+          <section class="card" id="card2">
             <h3>Member Spotlights</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               Adipiscing tristique risus nec feugiat in fermentum. nuts</p>
@@ -85,6 +90,6 @@
       </footer>
       <script src="scripts/getdates.js"></script>
       <script src="scripts/menu.js"></script>
-      <script src="scripts/cardswitch.js"></script>
+      <script src="scripts/darkmode.js"></script>
 </body>
 </html>
