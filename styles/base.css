@@ -1,5 +1,5 @@
 body {
-    max-width: 760px;
+    max-width: 960px;
     margin: 0 auto;
     text-align: center;
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -12,12 +12,12 @@ header div {
     padding: 20px;
     background-color: #00008B;
   }
-  
-img {
+
+/* #profile  {
     width: 100px;
     height: auto;
     margin-right: 10px;
-  }
+  } */
   
 h1 {
     color: #fff;
@@ -94,5 +94,36 @@ footer {
     color: #fff;
 }
 
+
+.hero {
+	margin: 0px auto;
+	position: relative;
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.overlay {
+	position: absolute;
+	top: 100px;
+	left: 360px;
+	background: radial-gradient(#fff, #00008B);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	white-space: nowrap;
+    overflow: hidden; /* Hide overflow text */
+}
+
+.overlay p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+}
 
 

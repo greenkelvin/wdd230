@@ -1,4 +1,4 @@
-@media (max-width: 640px) {
+@media (max-width: 960px) {
 	#menu {
 		font-size: 1.5rem;
 		border: 0;
@@ -41,6 +41,12 @@
 
 	.open a {
 		display: block;
+	}
+
+	.overlay {
+		position: absolute;
+		top: 50px;
+		left: 90px;
 	}
 }
 

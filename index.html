@@ -22,7 +22,7 @@
 <body>
     <header>
       <div class="container">
-        <img src="images/professional2.jpg" alt="profile picture">
+        <img src="images/professional2.webp" id="profile" alt="profile picture">
         <h1>Kelvin Green</h1>
       </div>
       <button id="menu"></button>
@@ -37,13 +37,23 @@
       </nav>
     </header>
       <main>
+        <div class="hero">
+          <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 400px)" type="image/webp">
+            <source srcset="images/hero-small.webp" media="(max-width: 960px)" type="image/webp">
+            <img src="images/hero-medium.webp" alt="san diego temple">
+          </picture>
+          <div class="overlay">
+            <p>San Diego Temple</p>
+          </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card" id="activitiesCard">
             <h3>Learning Activities</h3>
             <ul>
                 <li>01: <a href="https://www.example.com">Title</a></li>
                 <li>02: <a href="lesson02/design-principles.html" onclick="window.open('lesson02/design-principles.html', '_self');">Design Principles Document</a></li>
-                <li>03: <a href="images/combinators.png" target="_blank">Combinators</a>
+                <li>03: <a href="images/combinators.webp" target="_blank">Combinators</a>
                   <a href="https://codepen.io/Kelvin-Green/pen/LYaOGbv">| Pseudo-elements</a>
                   <a href="https://codepen.io/Kelvin-Green/pen/abMVdyX">| Hamburger Menu</a>
                   <a href="lesson03/chamber-site-plan.html" onclick="window.open('lesson03/chamber-site-plan.html', '_self');">Chamber Site Plan</a></li>
