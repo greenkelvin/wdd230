@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Get the current year
-    const currentYear = new Date().getFullYear();
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
+    const currentMonth = currentDate.getMonth() + 1;
+    const currentDay = currentDate.getDate();
 
-    // Get the last modified date
     const lastModifiedDate = new Date(document.lastModified);
     const lastModifiedYear = lastModifiedDate.getFullYear();
 
-    // Display the information
     document.getElementById("copyright").innerText = `© ${currentYear} Ithaca Chamber | Kelvin Green | WDD 230 Project | `;
     document.getElementById("lastModified").innerText = `Last Modified: ${lastModifiedDate.toDateString()}`;
+    document.getElementById("currentDate").innerText = `${currentMonth}/${currentDay}/${currentYear}`;
 });
