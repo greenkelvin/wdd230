@@ -1,0 +1,68 @@
+{
+    "companies": [
+      {
+        "name": "McDonald's",
+        "address": "110 N Carpenter St, United States",
+        "phone": "(208) 356-0060",
+        "website": "https://www.mcdonalds.com/us/en-us.html",
+        "image": "mcdonalds.jpg",
+        "membershipLevel": "Gold",
+        "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "name": "KFC",
+        "address": "1441 Gardiner Lane, Louisville",
+        "phone": "(208) 523-3270",
+        "website": "https://www.kfc.com",
+        "image": "kfc.png",
+        "membershipLevel": "Bronze",
+        "otherInfo": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "name": "Chick-fil-A",
+        "address": "5200 Buffington Road, Atlanta, GA",
+        "phone": "(866) 232-2040",
+        "website": "https://www.chick-fil-a.com",
+        "image": "chickfila.png",
+        "membershipLevel": "Silver",
+        "otherInfo": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "name": "Chipotle",
+        "address": "610 Newport Center Drive, Suite 1100. Newport Beach, CA",
+        "phone": "1 (800) 244-7685",
+        "website": "https://www.chipotle.com",
+        "image": "chipotle.png",
+        "membershipLevel": "Silver",
+        "otherInfo": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "name": "Dominos",
+        "address": "30 Frank Lloyd Wright Drive, Ann Arbor, MI",
+        "phone": "(208) 356-9555",
+        "website": "https://www.dominos.com/en/",
+        "image": "dominos.png",
+        "membershipLevel": "Bronze",
+        "otherInfo": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "name": "Subway",
+        "address": "1 Corporate Drive Suite 1000. Shelton, CT",
+        "phone": "(208) 359-9054",
+        "website": "https://www.subway.com/en-us",
+        "image": "subway.png",
+        "membershipLevel": "Gold",
+        "otherInfo": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "name": "Wendy's",
+        "address": "1 Dave Thomas Boulevard. Dublin, OH",
+        "phone": "(208) 497-0075",
+        "website": "https://www.wendys.com",
+        "image": "wendys.png",
+        "membershipLevel": "Gold",
+        "otherInfo": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
+    ]
+  }
+  

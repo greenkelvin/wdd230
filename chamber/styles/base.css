@@ -78,6 +78,7 @@ footer {
     gap: 10px;
   }
 
+
 .top-row {
     display: flex;
     grid-template-columns: 1fr 1fr;
@@ -215,6 +216,56 @@ input:checked + .slider:before {
     width: 100%; /* Ensure images fill their container */
 }
 
+#members li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted to fit three cards side by side */
+    gap: 20px;
+}
+
+
+#members li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    padding: 20px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+#gridBtn::after {
+    content: "\1F5D2"; /* Unicode character for grid view */
+    margin-right: 5px;
+}
+
+#listBtn::after {
+    content: "\2630"; /* Unicode character for list view */
+    margin-left: 5px;
+}
+
+.members-title {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+    color:#fff;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
 @media (max-width: 576px) {
     .navbar-items {
         display: flex;
