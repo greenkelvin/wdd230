@@ -13,7 +13,13 @@ header div {
     background-color: #00008B;
   }
 
-  h1 {
+/* #profile  {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+  } */
+  
+h1 {
     color: #fff;
     margin: 0;
 }
@@ -79,7 +85,44 @@ main h2 {
     margin-top: 0;
 }
 
+#activitiesCard li{
+    text-align: left;
+}
+
 footer {
     background-color: #00008B;
     color: #fff;
 }
+
+
+.hero {
+	margin: 0px auto;
+	position: relative;
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.overlay {
+	position: absolute;
+	top: 100px;
+	left: 360px;
+	background: radial-gradient(#fff, #00008B);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	white-space: nowrap;
+    overflow: hidden; /* Hide overflow text */
+}
+
+.overlay p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+

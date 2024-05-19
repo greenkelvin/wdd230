@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD230 - Web Frontend Developmet, Kelvin Green, chamber of commerce homepage">
+    <meta property="og:title" content="Ithaca Chamber of Commerce Discover Page">
+    <meta name="author" content="Kelvin Green">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://greenkelvin.github.io/wdd230/">
+    <meta property="og:image" content="https://lp-cms-production.imgix.net/2019-06/GettyImages-184449155_super.jpg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <title>Ithaca Chamber of Commerce Discover Page</title>
+</head>
+<body>
+    <header>
+      <button id="menu"></button>
+      <nav class="navbar">
+        <h1>Ithaca Chamber of Commerce</h1>
+        <ul class="navbar-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Join Us</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><label class="switch" id="slider">
+              <input type="checkbox" id="myCheckbox">
+              <span class="slider round"></span>
+            </label>
+            </li>
+        </ul>
+      </nav>
+    </header>
+      <main>
+        <div class="container">
+            <div class="sidebar">
+            <div id="welcomeCard" class="card">
+                <h2>Welcome</h2>
+            </div>
+              <div class="card">
+                <h2>Demographics</h2>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero non quibusdam cumque doloribus excepturi eos ratione perferendis pariatur corrupti numquam. Debitis aliquid dolorem molestias maiores veniam, facere saepe quisquam dolores.
+              </div>
+              <div class="card">
+                <h2>Events</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam placeat consequuntur! Aliquid alias molestiae sequi molestias commodi facere culpa sed eius, doloribus ad omnis quam iste quisquam possimus esse!
+              </div>
+              <div class="card">
+                <h2 id="currentDate"></h2>
+                <table class="calendar">
+                  <thead>
+                    <tr>
+                      <th>Sun</th>
+                      <th>Mon</th>
+                      <th>Tue</th>
+                      <th>Wed</th>
+                      <th>Thu</th>
+                      <th>Fri</th>
+                      <th>Sat</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Calendar days will be generated using JavaScript -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="main-content">
+                <h2 class="main-heading">Discover Ithaca</h2>
+                <div class="image-gallery">
+                    <h3>Robert Treman Park</h3>
+                    <div class="image">
+                        <picture>
+                            <source srcset="images/robert-treman-small.webp" media="(max-width: 576px)" type="image/webp">
+                            <source srcset="images/robert-treman-medium.webp" media="(max-width: 992px)" type="image/webp">
+                            <img src="images/robert-treman-medium.webp" alt="robert treman park" loading="lazy">
+                        </picture>
+                    </div>
+                    <h3>Cornell University</h3>
+                    <div class="image">
+                        <picture>
+                            <source srcset="images/cornell-university-small.webp" media="(max-width: 576px)" type="image/webp">
+                            <source srcset="images/cornell-university-medium.webp" media="(max-width: 992px)" type="image/webp">
+                            <img src="images/cornell-university-medium.webp" alt="cornell university" loading="lazy">
+                        </picture>
+                    </div>
+                    <h3>Buttermilk Falls</h3>
+                    <div class="image">
+                        <picture>
+                            <source srcset="images/buttermilk-small.webp" media="(max-width: 576px)" type="image/webp">
+                            <source srcset="images/buttermilk-medium.webp" media="(max-width: 992px)" type="image/webp">
+                            <img src="images/buttermilk-medium.webp" alt="buttermilk falls" loading="lazy">
+                        </picture>
+                    </div>
+                    <h3>Cornell Botanic Gardens</h3>
+                    <div class="image">
+                        <picture>
+                            <source srcset="images/botanic-gardens-small.webp" media="(max-width: 576px)" type="image/webp">
+                            <source srcset="images/botanic-gardens-medium.webp" media="(max-width: 992px)" type="image/webp">
+                            <img src="images/botanic-gardens-medium.webp" alt=" cornell botanic gardens" loading="lazy">
+                        </picture>
+                    </div>
+                    <h3>Ithaca Falls</h3>
+                    <div class="image">
+                        <picture>
+                            <source srcset="images/ithaca-falls-small.webp" media="(max-width: 576px)" type="image/webp">
+                            <source srcset="images/ithaca-falls-medium.webp" media="(max-width: 992px)" type="image/webp">
+                            <img src="images/ithaca-falls-medium.webp" alt="ithaca falls" loading="lazy">
+                        </picture>
+                    </div>
+                    <h3>Cayuga Lake</h3>
+                    <div class="image">
+                        <picture>
+                            <source srcset="images/cayuga-lake-small.webp" media="(max-width: 576px)" type="image/webp">
+                            <source srcset="images/cayuga-lake-medium.webp" media="(max-width: 992px)" type="image/webp">
+                            <img src="images/cayuga-lake-medium.webp" alt="cayuga lake" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </main>
+      <footer>
+        <div class="contact-info">
+          <h2>Ithaca Chamber of Commerce</h2>
+          <p>123 Fake Address Rd</p>
+          <p>info@ithacachamber.org</p>
+          <p>(123)-456-7890</p>
+        </div>
+        <div class="dates-container">
+          <p id="copyright"></p>
+          <p id="lastModified"></p>
+        </div>
+      </footer>
+      <script src="scripts/getdates.js"></script>
+      <script src="scripts/menu.js"></script>
+      <script src="scripts/darkmode.js"></script>
+      <script src="scripts/calendar.js"></script>
+      <script src="scripts/lazy-load.js"></script>
+      <script src="scripts/visits.js"></script>
+</body>
+</html>

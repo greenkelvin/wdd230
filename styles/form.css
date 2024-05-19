@@ -1,0 +1,126 @@
+:root {
+    --form-padding: 20px;
+    --form-background: #f9f9f9;
+    --label-color: #333;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header, footer {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00008B;
+  }
+
+  h1 {
+    color: #fff;
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+}
+
+nav ul {
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:visited{
+	display: block;
+	color: #ccc;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+.navigation {
+    flex-direction: row;
+}
+
+.navigation a {
+    display: block;
+    flex: 1 1 100%;
+}
+nav li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+li {
+    list-style: none;
+    padding: 15px;
+}
+
+footer {
+    background-color: #00008B;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: var(--form-padding);
+    background-color: var(--form-background);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .container form div {
+    margin-bottom: 15px;
+  }
+  
+  .container form label {
+    display: block;
+    color: var(--label-color);
+    margin-bottom: 5px;
+  }
+  
+  .container form input[type="text"],
+  .container form input[type="password"],
+  .container form input[type="email"],
+  .container form input[type="range"],
+  .container form button {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .container form #password-match-error {
+    display: block;
+    color: red;
+    margin-top: 5px;
+  }

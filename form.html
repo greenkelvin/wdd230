@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD230 - Web Frontend Development, Kelvin Green, form build">
+    <meta property="og:title" content="Form Build">
+    <meta property="og:type" content="website">
+    <meta name="author" content="Kelvin Green">
+    <meta property="og:url" content="https://greenkelvin.github.io/wdd230/">
+    <meta property="og:image" content="https://lp-cms-production.imgix.net/2019-06/GettyImages-184449155_super.jpg" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <title>Form Build</title>
+</head>
+<body>
+    <header>
+      <div>
+        <img src="images/professional2.webp" id="profile" alt="profile picture">
+        <h1>Kelvin Green</h1>
+      </div>
+      <nav class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html" onclick="window.open('lesson03/chamber-site-plan.html', '_self');">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=eng#p12">Scripture</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div class="container">
+        <form action="record.html" method="get">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 characters long and alphanumeric" required>
+            </div>
+            <div>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required oninput="checkPassword()">
+                <span id="password-match-error" style="color: red;"></span>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern=".+@byui\.edu" title="A valid byui.edu email address">
+            </div>
+            <div>
+                <label for="rating">Page Rating:</label>
+                <input type="range" id="rating" name="rating" min="1" max="10" step="1" onchange="updateRating()">
+                <span id="rating-value">5</span>
+            </div>
+            <button type="submit">Submit Form</button>
+        </form>
+        </div>
+        <script>
+            function checkPassword() {
+                var password = document.getElementById("password");
+                var confirmPassword = document.getElementById("confirm-password");
+                var passwordMatchError = document.getElementById("password-match-error");
+    
+                if (password.value !== confirmPassword.value) {
+                    passwordMatchError.textContent = "Passwords do not match";
+                    confirmPassword.focus();
+                } else {
+                    passwordMatchError.textContent = "";
+                }
+            }
+    
+            function updateRating() {
+                var rating = document.getElementById("rating");
+                var ratingValue = document.getElementById("rating-value");
+    
+                ratingValue.textContent = rating.value;
+            }
+        </script>
+    </main>
+    <footer>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+      </footer>
+      <script src="scripts/getdates.js"></script>
+      <script src="scripts/hamburger.js"></script>
+</body>
+</html>

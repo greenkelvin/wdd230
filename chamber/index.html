@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD230 - Web Frontend Developmet, Kelvin Green, chamber of commerce directory">
+    <meta property="og:title" content="Ithaca Chamber of Commerce Directory">
+    <meta name="author" content="Kelvin Green">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://greenkelvin.github.io/wdd230/">
+    <meta property="og:image" content="https://lp-cms-production.imgix.net/2019-06/GettyImages-184449155_super.jpg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <title>Ithaca Chamber of Commerce Directory Page</title>
+</head>
+<body>
+    <header>
+      <button id="menu"></button>
+      <nav class="navbar">
+        <h1>Ithaca Chamber of Commerce</h1>
+        <ul class="navbar-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Join Us</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><label class="switch" id="slider">
+              <input type="checkbox" id="myCheckbox">
+              <span class="slider round"></span>
+            </label>
+            </li>
+        </ul>
+      </nav>
+    </header>
+      <main>
+        <div class="hero" id="hero-image">
+          <img src="images/ithaca_image.jpg" alt="hero image">
+        </div>
+        <div class="grid-container">
+          <div class="top-row">
+          <section class="card" id="current-events">
+              <h3>Current Events</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Adipiscing tristique risus nec feugiat in fermentum. Urna molestie at elementum eu facilisis sed odio. 
+                Pharetra magna ac placerat vestibulum lectus mauris ultrices eros in. In cursus turpis massa tincidunt dui ut.</p>
+          </section>
+          <section class="card" id="weather">
+              <h3>Weather</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Adipiscing tristique risus nec feugiat in fermentum. Urna molestie at elementum eu facilisis sed odio. 
+                Pharetra magna ac placerat vestibulum lectus mauris ultrices eros in. In cursus turpis massa tincidunt dui ut.</p>
+          </section>
+        </div>
+        <div class="bottom-row">
+          <section class="card" id="card1">
+              <h3>Member Spotlights</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Adipiscing tristique risus nec feugiat in fermentum. deez </p>
+          </section>
+          <section class="card" id="card2">
+            <h3>Member Spotlights</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Adipiscing tristique risus nec feugiat in fermentum. nuts</p>
+          </section>
+          <section class="card" id="card3">
+              <h3>Member Spotlights</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Adipiscing tristique risus nec feugiat in fermentum. suck</p>
+          </section>
+        </div>
+        </div>
+      </main>
+      <footer>
+        <div class="contact-info">
+          <h2>Ithaca Chamber of Commerce</h2>
+          <p>123 Fake Address Rd</p>
+          <p>info@ithacachamber.org</p>
+          <p>(123)-456-7890</p>
+        </div>
+        <div class="dates-container">
+          <p id="copyright"></p>
+          <p id="lastModified"></p>
+        </div>
+      </footer>
+      <script src="scripts/getdates.js"></script>
+      <script src="scripts/menu.js"></script>
+      <script src="scripts/darkmode.js"></script>
+</body>
+</html>
